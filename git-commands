@@ -1,0 +1,76 @@
+touch file1 
+ls
+git status
+git add file1
+git status
+
+
+git commit -m "sample file" file1
+git status
+git log
+git show cid
+Touch file2
+Git status
+Git add file2
+Git status
+Git commit -m “test commit from prasad” file2
+Git log 
+Git show Commit-ID
+---------------------------
+touch file3 file4 file5
+ls
+git add file3
+git status
+add multiple files from workspace - staging/index -local repository
+git add file2 file3 file4 ...
+or
+git add .
+or
+git add *
+or
+git add -A
+git status
+git commit -m "label"
+git status
+git log
+Staging/index file to workspace 
+git reset HEAD file-name (staging to workspace)			singlefile
+git reset HEAD file1 file2 file3 		or   git reset HEAD *		multiplefile
+local repository to Staging/index {entire commit will reset not one file}
+git reset --soft cid (commit ID -1)
+if file1 in local repository then what is you modified in workspace      file1 then how to add workspace to local repository 
+git commit -m "label" file-name (only modified files --> workspace to local repo)
+what you modified in file1 difference will show in this command
+git diff file1 (it show diff)
+	git diff file1 
+in workspace modified file --- local repository
+	git commit -m “modified” file1
+git reset --mixed cid  (local to workspace){ cid means n-1} to enter this command whatever the files in local repository all files will be back to workspace and also what ever files in staging/index files also move to workspace 
+-------------------------------------------------------------------------------------------------------------------------------------
+how to create central repository
+github.com signup and verify email
+1st you need to clone the central repository to local machine
+git clone https://github.com/polarapu/batch61.git
+ls
+cd batch61
+touch siva
+ls
+git status
+git add siva
+git status
+git commit -m "sample from siva" siva
+git status
+git log
+git push
+delete a folder in local machine already clone git hub repository git commands not working then again clone git repository
+git clone __________(http git clone address)
+create empty file 
+	Touch commands
+Git add commands
+Git status
+Git commit -m “sample commands” commands
+Git log
+Git push
+Go git hub repository and check created file or not
+put some data in commands file and again push it
+
