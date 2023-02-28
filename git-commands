@@ -74,3 +74,36 @@ Git push
 Go git hub repository and check created file or not
 put some data in commands file and again push it
 
+how to delete and modify name file in central repository
+1st delete in local
+	rm -rf file-name
+then 	git add file1	git commit -m “delete” file1 	git push
+change a file name 
+	mv existing-filename new-file name
+	mv prasad prasad1
+				hear prasad file delete and create prasad1 file new in backend
+	git add *	git commit -m “rename”  	git push
+create directory and push and delete in github
+mkdir dir1
+	cd dir1/		touch guna f1 f2	cd .. 	git status
+	empty directory not show in workspace create any file
+if I add all files will go to staging/index but I want only one file to upload in the directory
+	git add dir1/guna
+	git commit -m ”directory”	git push
+	in github dir1 delete particular file
+	rm -rf dir1/f1	git add *	git commit -m “sample commit”	git push
+
+3rd party person how to clone and how to push and where permission given by owner of git hub repository
+git clone https://github.com/polarapu/batch61.git
+ls
+cd batch61
+touch siva
+ls
+git status
+git add siva
+git status
+git commit -m "sample from siva" siva
+git status
+git log
+git push
+
