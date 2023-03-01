@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 t
 ouch file1 
+=======
+touch touch touch file1111111111111
+touch file1 
+>>>>>>> 49418d353a87aac7ef3f35e147e93950be3b544c
 ls
 git status
 git add file1
